@@ -1,0 +1,1182 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #f5f5f5 ;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+
+#envelope{
+    display: flex;
+    gap: 10px;
+    padding-left: 230px;
+    font-family: "Cairo", sans-serif;
+    font-size: 14px;
+}
+
+header svg{
+    width: 14px;
+    height: 14px;
+}
+
+#barra-01{
+    padding-left: 20px;
+}
+
+#free{
+    padding-left: 20px;
+    font-family: "Cairo", sans-serif;
+    font-size: 14px;
+}
+
+#social{
+    padding-left: 400px;
+}
+
+.redes{
+    margin: 10px;
+}
+
+#language-header{
+    display: flex;
+    padding: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+#language-header img{
+    width: 27px;
+    height: 14px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+#language-header svg{
+    height: 7px;
+    width: 7px;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+
+#login{
+    display: flex;
+    padding: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+#login>svg{
+    margin-right: 10px;
+    height: 12px;
+    width: 14px;
+    margin-top: 7px;
+}
+
+main{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 0.7fr 1.3fr 1.3fr 1.3fr 1.3fr 0.7fr;
+    grid-template-rows: 80px 50px 200px 75px 400px 130px 200px 150px 100px 400px 400px 400px 100px;
+}
+
+main div{
+    /*border: solid 2px;*/
+}
+
+#logo{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 30px;
+}
+
+#nav{
+    grid-column: 3/6;
+}
+
+#nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:50px;
+    padding-inline: 20px;
+    position: relative;
+}
+
+#nav{
+    display: flex;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+#nav ul{
+    font-weight: 900;
+}
+
+#nav button{
+    border: none;
+    background-color: white;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 900;
+}
+
+#nav a:hover{
+    color: #7fad39;
+}
+
+#nav>div{
+    margin-left: auto;
+}
+
+#nav svg{
+    width: 18px;
+    height: 18px;
+}
+
+#nav li:hover{
+    color: #7fad39;
+}
+
+
+
+#dropdown ~div{
+    position: absolute;
+    top: 200%;
+    opacity: 0;
+    transition: .5s;
+    width: 150px;
+    height: 150px;
+    background-color: #252525;
+    color: white;
+    left: 200px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 50px 5px 10px;
+}
+
+
+#dropdown:hover ~div{
+    top: 58%;
+    opacity: 1;
+}
+
+#carrinho{
+    display: flex;
+    padding-right: 40px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#menu{
+    grid-row: 2/3;
+    grid-column: 2;
+}
+
+#menu label {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+    background-color: #7fad39;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+}
+
+#menu>div{
+    position: relative;
+}
+
+#menu>div svg{
+    width: 15px;
+}
+
+#menu path{
+    fill: white;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked~.dropdown2{
+    height: 440px;
+    background-color: white;
+}
+
+.dropdown2{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transition: 1s;
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dropdown2>p{
+    font-family: 'Cairo', sans-serif;
+}
+
+#busca{
+    grid-column: 3/5;
+    grid-row: 2;
+}
+
+#busca{
+    display: flex;
+    width: 100%;
+}
+
+#busca>input::placeholder{
+    font-family: 'Cairo', sans-serif;
+    font-size: 17px;
+    color: #b2b2b2;
+}
+
+#busca button{
+    height: 100%;
+    padding-inline: 20px;
+    background-color: #7fad39;
+    text-decoration: none;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    border: none;
+}
+
+#busca input{
+    width: 100%;
+    padding-left: 30px;
+}
+
+#categories{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    border: none;
+}
+
+#categories svg{
+    height: 10px;
+    width: 10px;
+}
+
+#categories p{
+    display: block;
+    width: 100px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
+}
+
+#contato {
+    grid-column: 5/6;
+    grid-row: 2;
+}
+
+#contato{
+    display: flex;
+    gap: 20px;
+}
+
+#telefone svg{
+    width: 50px;
+    height: 50px;
+    padding: 18px;
+    background: #ddd;
+    border-radius: 50%;
+    fill: #7fad39;
+}
+
+#telefone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#support{
+    width: 100%;
+}
+
+#support p{
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+#tomato{
+    grid-column: 1/7;
+    background-image: url(breadcrumb.jpg);
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+}
+
+#tomato>h1{
+    font-size: 46px;
+    font-weight: 900;
+}
+
+#tomato p{
+    font-size: 16px;
+}
+
+#department{
+    grid-column: 2/3;
+    grid-row:4/6;
+    font-family: 'Cairo', sans-serif;
+    height: 100%;
+}
+
+#department>h2{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#department ul{
+    list-style: none;
+    font-size: 16px;
+    line-height: 39px;
+}
+
+#saleoff{
+    grid-column: 3/6;
+    grid-row: 4;
+}
+
+#saleoff{
+    font-family: 'Cairo', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    position: relative;
+}
+
+#saleoff div{
+    position: absolute;
+    background-color: #7fad39;
+    height: 4px;
+    width: 15%;
+    border: none;
+    top: 55px;
+}
+
+#img-sale{
+    grid-column: 3/6;
+    grid-row: 5;
+    display: flex;
+    position: relative;
+}
+
+.text-pd {
+   position: absolute;
+   top: 290px;
+   margin-left: 80px;
+   font-family: 'Cairo', sans-serif;
+}
+
+.text-pd p{
+    text-align: center;
+    font-size: 14px;
+    color: #b2b2b2;
+}
+
+.text-pd h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text-pd h5{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.text-pd span{
+    font-size: 14px;
+    color: #b2b2b2;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+ #manga{
+    grid-column: 3/4;
+    background-image: url(pd-4.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+ }
+
+ #hamburguer{
+    grid-column: 4/5;
+    background-image: url(pd-5.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+ }
+
+ #uva{
+    grid-column: 5/6;
+    background-image: url(pd-6.jpg);
+    width: 100%;
+    background-repeat: no-repeat;   
+ }
+
+#price{
+    grid-column: 2/3;
+    grid-row: 6;
+    font-family: 'Cairo',sans-serif;
+}
+
+#price input{
+    width: 100%;
+    background: #dd2222;
+}
+
+#price p{
+    color: #dd2222;
+    font-weight: 900;
+}
+
+#price>h1{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+#bolinha{
+    grid-column: 3/6;
+    grid-row: 6;
+    position: relative;
+}
+
+#bolinha>div{
+    position: absolute;
+    display: flex;
+    top: 50px;
+    left: 370px;
+    gap: 10px;
+    border: none;
+}
+
+#cinza{
+    background-color: #6f6f6f;
+    border: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+}
+
+#branca{
+    border: 1px solid #b2b2b2;
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+}
+
+
+#colors{
+    grid-column: 2/3;
+    grid-row: 7;
+}
+
+#popular{
+    grid-column: 2/3;
+    grid-row: 8;
+}
+
+#latest{
+    grid-column: 2/3;
+    grid-row: 9;
+    display: flex;
+}
+
+#products-01{
+    grid-column: 3/6;
+    grid-row: 7/10;
+    display: flex;
+    gap: 5px;
+}
+
+#security{
+    grid-column:2/3;
+    font-family: 'Cairo', sans-serif;
+}
+
+#products-02{
+    grid-column: 3/6;
+    display: flex;
+    gap: 5px;
+}
+
+#products-03{
+    grid-column: 3/6;
+    display: flex;
+    font-family: 'Cairo', sans-serif;
+    gap: 5px;
+}
+
+#products-04{
+    grid-column: 3/6;
+    display: flex;
+    font-family: 'Cairo', sans-serif;
+    gap: 5px;
+}
+
+footer{
+    display: grid;
+    grid-template-rows: 350px 80px;
+    grid-template-columns: 0.7fr 1.6fr 1.6fr 1.6fr 0.7fr;
+    /*border: solid 2px;*/
+    background-color: #F3F6FA;
+    font-family: 'Cairo', sans-serif;
+}
+ 
+ footer ul{
+     font-size: 14px;
+     list-style: none;
+}
+
+ #ogani{
+    grid-column: 2;
+    /*border: solid 2px;*/
+    margin-top: 50px;
+}
+
+#useful{
+    grid-column: 3;
+    display: flex;
+    gap: 70px;
+    /*border: solid 2px;*/
+    margin-top: 50px;
+}
+
+.negrito{
+    font-weight: 900;
+}
+
+#lista{
+    margin-top: 30px;
+}
+
+#join input{
+    width: 250px;
+    height: 34px;
+}
+
+#join{
+    grid-column: 4;
+    /*border: solid 2px;*/
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+#join svg{
+    height: 15px;
+    width: 15px;
+}
+
+#email{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#email input{
+    border: 1px solid #ededed;
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+    height: 46px;
+}
+
+#subscribe>button{
+    height: 46px;
+}
+
+#subscribe{
+    width: 150px;
+}
+
+#subscribe>button{
+    width: 100%;
+}
+
+#enter-email{
+    width: 230px;
+}
+
+#enter-email input{
+    width: 100%;
+}
+
+
+#email input::placeholder{
+    padding-left: 10px;
+    color: #1c1c1c;
+}
+
+#email button{
+    padding-inline: 20px;
+    background-color: #7fad39;
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+    border: none;
+}
+
+#social-2 button{
+    background-color: white;
+    width: 41px;
+    height: 41px;
+    border-radius: 30px;
+    border: 1px solid #ededed;
+    margin: 0 5px 0 5px;
+}
+
+#social-2 button:hover{
+    background-color: #7fad39;
+}
+
+#copyright{
+    grid-column: 2/3;
+    display: flex;
+}
+
+#copyright svg{
+    height: 16px;
+    width: 16px;
+    top: 2px;
+}
+
+#copyright a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+#cartoes{
+    grid-column: 4;
+}
+
+#cartoes>img{
+    width: 286px;
+    height: 23px;
+}
+
+#colors{
+    font-family: 'Cairo', sans-serif;
+}
+
+#colors label{
+    font-size: 16px;
+}
+
+#colors>h1{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#colors div{
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#White{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 0;
+}
+
+#red{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 0;
+}
+
+#blue{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 0;
+}
+
+#green{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 100px;
+}
+
+#gray{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 100px;
+}
+
+#black{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 100px;
+}
+
+#colors-01{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    top: 20px;
+}
+
+#colors-02{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    top: 50px;
+}
+
+#colors-03{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    top: 80px;
+}
+
+#popular div{
+    display: flex;
+    gap: 20px;
+    border: none;
+}
+
+#popular>h1{
+    margin-bottom: 30px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 24px;
+    font-weight: 900
+}
+
+#large{
+    height: 32px;
+    width: 78px;
+    margin-bottom: 7px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+#medium{
+    height: 32px;
+    width: 90px;
+    margin-bottom: 7px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+#small{
+    height: 32px;
+    width: 78px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+#tiny{
+    height: 32px;
+    width: 71px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.text-tam{
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 12px;
+    color: #6f6f6f;
+}
+
+#latest button{
+    height: 30px;
+    width: 30px;
+}
+
+#latest svg{
+    height: 14px;
+    width: 8px;
+}
+
+#latest>h1{
+    font-size: 24px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+}
+
+#latest div{
+    margin-left: 10px;
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+    border: none;
+}
+
+#security div{
+    margin: 0 15px 15px 0;
+    border: none;
+}
+
+#security h4{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#security p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#espinafre{
+    display: flex;
+    width: 100%;
+}
+
+#espinafre>img{
+    margin-right: 15px;
+}
+
+#pimentao>img{
+    margin-right: 15px;
+}
+
+#frango>img{
+    margin-right: 15px;
+}
+
+#pimentao{
+    display: flex;
+    width: 100%;
+}
+
+#frango{
+    display: flex;
+    width: 100%;
+}
+
+#products-01 div{
+    width: 100%;
+    gap: 30px;
+    position: relative;
+}
+
+#sort div{
+    position: absolute;
+    top: 370px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+}
+
+#prod-found div{
+    position: absolute;
+    top: 370px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+}
+
+#txt-bars{
+        top: 355px;    
+    position: absolute;
+        text-align: center;
+        font-family: 'Cairo', sans-serif;
+}
+
+#products-01 h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+#products-01 span{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#products-02 span{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#products-02 h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#products-03 h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#products-04 h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#products-03 span{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#products-04 span{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+#sort svg{
+    height: 13px;
+    width: 13px;
+}
+
+#bars svg{
+    height: 15px;
+    width: 15px;
+}
+
+#bars{
+    background-image: url(feature-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#barrinha{
+    display: flex;
+    padding-left: 180px;
+    border: none;
+}
+
+#sort{
+    background-image: url(feature-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+}
+
+#prod-found{
+    background-image: url(feature-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+}
+
+#products-02 div{
+    width: 100%;
+    gap: 30px;
+    position: relative;
+}
+
+
+#grape div{
+    position: absolute;
+    top: 340px;
+        text-align: center;
+        font-family: 'Cairo', sans-serif;
+}
+
+#ham div{
+    position: absolute;
+        top: 340px;
+        text-align: center;
+        font-family: 'Cairo', sans-serif;
+}
+
+#mango div{
+    position: absolute;
+        top: 340px;
+        text-align: center;
+        font-family: 'Cairo', sans-serif;
+}
+
+#ham{
+    margin-right: 15px;
+}
+
+#grape{
+    margin-right: 15px;
+    background-image: url(feature-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#products-03{
+    width: 100%;
+    position: relative;
+}
+
+#products-04{
+    width: 100%;
+    position: relative;
+}
+
+
+
+#watermelon{
+    margin-right: 15px;
+    background-image: url(feature-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#watermelon>div{
+    position: absolute;
+    top: 340px;
+    right: 270px;
+    text-align: center;
+}
+
+#apple{
+    margin-right: 15px;
+    background-image: url(feature-8.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#apple>div{
+    position: absolute;
+    top: 340px;
+    text-align: center;
+    right: 7px;
+}
+
+#products-03 div{
+    width: 100%;
+}
+
+#products-04 div{
+    width: 100%;
+}
+
+#chicken{
+    margin-right: 15px;
+    background-image: url(product-10.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#chicken>div{
+    position: absolute;
+    top: 340px;
+    text-align: center;
+    right: 270px;
+}
+
+#juice>div{
+    position: absolute;
+    top: 340px;
+    text-align: center;
+    right: 7px;
+}
+
+#juice{
+    margin-right: 15px;
+    background-image: url(product-11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fruit>div{
+    position: absolute;
+    top: 340px;
+    text-align: center;
+    left: 270px;
+}
+
+#numeros{
+    grid-column: 3/6;
+    display: flex;
+}
+
+#snacks{
+    background-image: url(product-9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#snacks>div{
+    position: absolute;
+    top: 340px;
+    text-align: center;
+    left: 270px;
+}
+
+#fruit{
+    background-image: url(product-12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ham{
+    background-image: url(pd-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#mango{
+    background-image: url(pd-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#numeros svg{
+    height: 14px;
+    width: 14px;
+}
+
+#numeros button{
+    height: 30px;
+    width: 30px;
+    margin: 16px;
+    border: 1px solid #b2b2b2;
+    text-align: center;
+    color: #b2b2b2;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+}
+
+#numeros button:hover{
+    background-color: #7fad39;
+    color: white;
+}
+
+#numeros button>svg:hover{
+    fill: white;
+}
+
+#sort p{
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+}
+
+#prod-found p{
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}

@@ -1,0 +1,874 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #f5f5f5 ;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+
+#envelope{
+    display: flex;
+    gap: 10px;
+    padding-left: 230px;
+    font-family: "Cairo", sans-serif;
+    font-size: 14px;
+}
+
+header svg{
+    width: 14px;
+    height: 14px;
+}
+
+main{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 0.7fr 1.3fr 1.3fr 1.4fr 1fr 0.7fr;
+    grid-template-rows: 80px 50px 431px 270px 170px 270px 80px 270px 80px 250px 100px 400px 100px 270px 250px;
+}
+
+main div{
+    /*border: solid 2px;*/
+}
+
+#logo{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 30px;
+}
+
+#nav{
+    grid-column: 3/6;
+}
+
+#nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:50px;
+    padding-inline: 20px;
+    position: relative;
+}
+
+
+#dropdown ~div{
+    position: absolute;
+    top: 200%;
+    opacity: 0;
+    transition: .5s;
+    width: 150px;
+    height: 150px;
+    background-color: #252525;
+    color: white;
+    left: 200px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 50px 5px 10px;
+}
+
+
+#dropdown:hover ~div{
+    top: 58%;
+    opacity: 1;
+}
+
+#checkbox {
+    display: none;
+}
+
+#menu{
+    grid-row: 2/4;
+    grid-column: 2;
+}
+
+#menu label {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+    background-color: #7fad39;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+}
+
+
+#menu>div{
+    position: relative;
+}
+
+#menu>div svg{
+    width: 15px;
+}
+
+#menu path{
+    fill: white;
+}
+
+.dropdown2{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transition: 1s;
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dropdown2>p{
+    font-family: 'Cairo', sans-serif;
+}
+
+
+
+#checkbox:checked~.dropdown2{
+    height: 440px;
+}
+
+
+#busca{
+    grid-column: 3/5;
+    grid-row: 2;
+}
+
+#contato {
+    grid-column: 5/6;
+    grid-row: 2;
+}
+
+#banner{
+    grid-row: 3;
+    grid-column: 3/6;
+}
+
+#free{
+    padding-left: 20px;
+    font-family: "Cairo", sans-serif;
+    font-size: 14px;
+}
+
+#social{
+    padding-left: 400px;
+}
+
+.redes{
+    margin: 10px;
+}
+
+#barra-01{
+    padding-left: 20px;
+}
+
+#language-header{
+    display: flex;
+    padding: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+#language-header img{
+    width: 27px;
+    height: 14px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+#language-header svg{
+    height: 7px;
+    width: 7px;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+
+
+#login{
+    display: flex;
+    padding: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+#login>svg{
+    margin-right: 10px;
+    height: 12px;
+    width: 14px;
+    margin-top: 7px;
+}
+
+#nav{
+    display: flex;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+#nav ul{
+    font-weight: 900;
+}
+
+#nav button{
+    border: none;
+    background-color: white;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 900;
+}
+
+#nav a:hover{
+    color: #7fad39;
+}
+
+#nav>div{
+    margin-left: auto;
+}
+
+
+#nav svg{
+     width: 18px;
+     height: 18px;
+}
+
+#carrinho{
+    display: flex;
+    padding-right: 40px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+#busca{
+    display: flex;
+    width: 100%;
+}
+
+#categories{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    border:none ;
+}
+
+#categories svg{
+    height: 10px;
+    width: 10px;
+}
+
+#busca>input::placeholder{
+    font-family: 'Cairo', sans-serif;
+    font-size: 17px;
+    color: #b2b2b2;
+}
+
+#categories p{
+    display: block;
+    width: 100px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
+}
+
+#busca button{
+    height: 100%;
+    padding-inline: 20px;
+    background-color: #7fad39;
+    text-decoration: none;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    border: none;
+}
+
+#busca input{
+    width: 100%;
+    padding-left: 30px;
+}
+
+#telefone svg{
+    width: 50px;
+    height: 50px;
+    padding: 18px;
+    background: #ddd;
+    border-radius: 50%;
+    fill: #7fad39;
+}
+
+#telefone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contato{
+    display: flex;
+    gap: 20px;
+}
+
+#support{
+    width: 100%;
+}
+
+#support p{
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+#banner {
+    background-image: url(banner.jpg) ;
+    background-size: cover;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 60px;
+}
+
+#banner h3{
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    color: #7fad39;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+#banner h2{
+    font-family: 'Cairo', sans-serif;
+    font-size: 40px;
+    color: #252525;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    margin-top: 10px ;
+}
+
+#banner p{
+    font-size: 14px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+    color: #6f6f6f;
+    margin-top: 15px;
+}
+
+#banner button{
+    background-color: #7fad39;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    color: white;
+    font-weight: 900;
+    padding: 10px 25px 10px 25px;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    border: none;
+}
+
+.btnprod{
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    border: 0;
+    font-weight: 900;
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #1c1c1c;
+}
+
+#nav li:hover{
+    color: #7fad39;
+}
+
+#produtos{
+    grid-column: 2/6;
+    display: flex;
+    gap: 20px;
+}
+
+#produtos div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#prod01{
+    background-image: url('cat-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+#prod02{
+    background-image: url('cat-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+#prod03{
+    background-image: url('cat-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+#prod04{
+    background-image: url('cat-4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+#featured{
+    grid-row: 5;
+    grid-column: 2/6;
+}
+
+#featured {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#featured>h1{
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1c1c1c;
+}
+
+.verde{
+    height: 4px;
+    width: 7%;
+    background-color: #7fad39;
+    border: none;
+}
+
+#featured ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding-top: 30px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+}
+
+ul+.verde{
+    width: 2%;
+    height: 4px;
+    margin-right: 460px;
+}
+
+#products-2{
+    grid-column: 2/ 6; 
+    display: flex;
+    gap: 20px;
+}
+
+#products-2>div{
+    width: 100%;
+}
+
+#carne{
+    background-image: url(feature-1.jpg);
+}
+
+#banana{
+    background-image: url(feature-2.jpg);
+}
+
+#goiaba{
+    background-image: url(feature-3.jpg);
+}
+
+#melancia{
+    background-image: url(feature-4.jpg);
+}
+
+.crab-pool{
+    grid-column: 2/6;
+    display: flex;
+}
+
+.crab-pool>p{
+    width: 100%;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+}
+
+#products-3{
+    grid-column: 2/6;
+    display: flex;
+    gap: 20px;
+}
+
+#products-3>div{
+    width: 100%;
+}
+
+#uva{
+    background-image: url(feature-5.jpg);
+}
+
+#hamburguer{
+    background-image: url(feature-6.jpg);
+}
+
+#manga{
+    background-image: url(feature-7.jpg);
+}
+
+#maca{
+    background-image: url(feature-8.jpg);
+}
+
+#outros-banners{
+    grid-column: 2/6;
+    display: flex;
+}
+
+#outros-banners>div{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+#outros-banners img{
+    width: 100%;
+    height: 200px;
+}
+
+#latest{
+    grid-column: 2/6;
+    display: flex;
+    justify-content: space-between;
+}
+
+#latest>div{
+    border: none;
+    display: flex;
+}
+
+#latest h4{
+    
+    font-size: 24px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+}
+
+.btn-latest{
+    height: 30px;
+    width: 30px;
+}
+
+.btn-latest>svg{
+    height: 14px;
+    width: 8px;
+}
+
+#comidas-1{
+    grid-column: 2/6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#comidas-1>div{
+    width: 33%;
+    height: 110px;
+}
+
+#comidas-1 img{
+    height: 107px;
+}
+
+.repolho{
+    display: flex;
+    gap: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.pimentao{
+    display: flex;
+    gap: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.frango{
+    display: flex;
+    gap: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+
+#blog{
+    grid-column: 2/6;
+}
+
+#blog>h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1c1c1c;
+    font-family: 'Cairo', sans-serif;
+}
+
+#blog div{
+    margin: auto;
+}
+
+#fotos-blog{
+    grid-column: 2/6;
+    display: flex;
+    gap: 30px;
+}
+
+#fotos-blog>div{
+    width: 100%;
+    display: flex;
+    border: none;
+}
+
+#fotos-blog img{
+    width: 100%;
+    height: 250px;
+}
+
+#blog-text{
+    grid-column: 2/6;
+    display: flex;
+    gap: 20px;
+}
+
+#blog-text>div{
+    width: 100%;
+}
+
+#blog-text svg{
+    width: 17px;
+    height: 20px;
+}
+
+#blog-text ul{
+    list-style: none;
+    display: flex;
+}
+
+footer{
+   display: grid;
+   grid-template-rows: 350px 80px;
+   grid-template-columns: 0.7fr 1.6fr 1.6fr 1.6fr 0.7fr;
+   /*border: solid 2px;*/
+   background-color: #F3F6FA;
+   font-family: 'Cairo', sans-serif;
+}
+
+footer ul{
+    font-size: 14px;
+    list-style: none;
+}
+
+
+.negrito{
+    font-weight: 900;
+}
+
+#join input{
+    width: 250px;
+    height: 34px;
+}
+
+#email{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#email input{
+    border: 1px solid #ededed;
+    font-family: 'Cairo', sans-serif;
+    width: 100%;
+    height: 46px;
+}
+
+#subscribe>button{
+    height: 46px;
+}
+
+#subscribe{
+    width: 150px;
+}
+
+#subscribe>button{
+    width: 100%;
+}
+
+#enter-email{
+    width: 230px;
+}
+
+#enter-email input{
+    width: 100%;
+}
+
+
+#email input::placeholder{
+    padding-left: 10px;
+    color: #1c1c1c;
+}
+
+#email button{
+    padding-inline: 20px;
+    background-color: #7fad39;
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+    border: none;
+}
+
+
+#ogani{
+    grid-column: 2;
+    /*border: solid 2px;*/
+    margin-top: 50px;
+}
+
+#lista{
+    margin-top: 30px;
+}
+
+#useful{
+    grid-column: 3;
+    display: flex;
+    gap: 70px;
+    /*border: solid 2px;*/
+    margin-top: 50px;
+}
+
+#join{
+    grid-column: 4;
+    /*border: solid 2px;*/
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+#social-2 button{
+    background-color: white;
+    width: 41px;
+    height: 41px;
+    border-radius: 30px;
+    border: 1px solid #ededed;
+    margin: 0 5px 0 5px;
+}
+
+#social-2 button:hover{
+    background-color: #7fad39;
+}
+
+
+#join svg{
+    height: 15px;
+    width: 15px;
+}
+
+#copyright{
+    grid-column: 2/3;
+    display: flex;
+}
+
+#copyright svg{
+    height: 16px;
+    width: 16px;
+    top: 2px;
+}
+
+#cartoes{
+    grid-column: 4;
+}
+
+#cartoes>img{
+    width: 286px;
+    height: 23px;
+}
+
+.blg ul{
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#blog-text a{
+    text-decoration: none;
+    color: #1c1c1c;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#blog-text p{
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    color: #6f6f6f;
+}
+
+#blog-text li{
+    font-family: 'Cairo', sans-serif;
+    color: #6f6f6f;
+}
+
+#copyright a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.btn{
+    display: flex;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.btn>button{
+    border: 1px solid #e6e6e6;
+}
+
+
+.firula svg {height: 20px;
+transition: 0.5s;}
+
+.firula {display: flex;
+justify-content: space-evenly;
+position: absolute;
+top: 100%; 
+width: 100%;
+transition: 0.5s;}
+
+#carne, #banana, #goiaba, #melancia, #uva, #hamburguer, #manga, #maca {position: relative;
+overflow: hidden; }
+
+#carne:hover .firula, #banana:hover .firula, #melancia:hover .firula, #goiaba:hover .firula, #maca:hover .firula, #manga:hover .firula, #hamburguer:hover .firula, #uva:hover .firula { top: 80%;}
+
+.firula>div{ width: 40px;
+height: 40px;
+background-color: white;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;}
+
+
+.firula>div:hover { background-color: #7fad39;}
+
+.firula>div:hover svg { transform: rotate(360deg);
+fill: white;}
+
